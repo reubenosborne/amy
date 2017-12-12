@@ -2,10 +2,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Reuben Osborne
+name: Amy Potenger
 
 # Short bio or description (displayed in the header)
-description: Web Developer
+description: Artist
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -16,7 +16,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://reubenosborne.com
+url: http://reubenosborne.com/amy
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)

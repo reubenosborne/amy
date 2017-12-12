@@ -2,26 +2,12 @@
 layout: default
 ---
 
-<div class="bg"></div>
-
-<div class="info">
-	<div class="info_blurb">
-		<h1>I'm Reuben, a web developer
-		currently roaming Asia with a focus on self education and street food.
-	</h1>
-	</div>
-	<br>
-	<div class="sec_para">
-		<h6>
-			Always open to conversations on blockchain technology, enhanced Jekyll blogs, pourover coffee, film photography and how our world is changing.
-		</h6>
-	</div>
-	<br>
-	<div class="buttons">
-		<!-- <a href="/work" class="portfolio button flex">PORTFOLIO</a> -->
-		<!-- <a href="/blog" class="blog button flex">STORIES</a> -->
-		<a href="mailto:reubenosborne@gmail.com" class="mail button flex"><i class="icon-mail"></i>&nbsp;CONTACT</a>
-	</div>
-	<br>
-
+<div class="posts">
+	{% for post in site.posts %}
+	<article class="post" style="background-image: url('../images/{{ post.img }}')">
+		<a href="{{ site.baseurl }}{{ post.url }}">
+				<h4>{{ post.title }}</h4>
+		</a>
+	</article>
+	{% endfor %}
 </div>

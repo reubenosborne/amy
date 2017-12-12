@@ -190,30 +190,30 @@ div[id*='product'] {
 
 #main {
   display: grid;
-  grid-gap: 20px;
-  grid-template-rows: 120px minmax(250px, auto) 100px;
-  grid-template-columns: 90px 1fr 90px;
-}
-
-.bg {
-  height: 100vh;
-  // background: url('images/bm/rings77.jpg') center center no-repeat;
-  background-color: white;
-  background-size: cover;
-  grid-row: 1 / 4;
-  grid-column: 1 / 4;
+  grid-template-rows: 100px minmax(250px, auto) 200px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .logo {
   grid-row: 1;
-  grid-column: 1;
+  grid-column: 1 / 3;
+  z-index: 99;
+  display: flex;
+  align-items: center;
   a {
-    color: #336;
-    font-size: 40px;
+    margin-left: 30px;
+    color: #333;
+    font-weight: 200;
+    font-size: 34px;
     text-decoration: none;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    transform: rotate(90deg);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  @media ( max-width: 800px ) {
+    a {
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
   }
 }
 
@@ -239,32 +239,6 @@ div[id*='product'] {
       cursor: pointer;
       color: #eee;
       background: rgba(71,157,221,1);
-    }
-  }
-}
-
-.info {
-  grid-row: 2;
-  grid-column: 2;
-  margin-top: 60px;
-  h1 {
-    color: #446;
-  }
-  @media ( max-width: 1200px ) {
-    h1 {
-      font-size: 40px;
-    }
-  }
-  @media ( max-width: 800px ) {
-    grid-column: 1 / 4;
-    margin: 50px 40px 0;
-    h1 {
-      font-size: 35px;
-    }
-  }
-  @media ( max-width: 600px ) {
-    h1 {
-      font-size: 15px;
     }
   }
 }
@@ -340,87 +314,28 @@ div[id*='product'] {
 /*******************/
 
 .posts {
-  grid-row: 2;
-  grid-column: 2;
   display: grid;
-  grid-gap: 30px;
-  grid-template-columns: 1fr 1fr;
-  @media ( max-width: 1800px ) {
-    grid-template-columns: 1fr;
-  }
-  @media ( max-width: 800px ) {
-    grid-row: 2;
-    grid-column: 1 / 4;
-    margin: 10px;
-  }
+  grid-row: 2;
+  grid-column: 1 / 4;
 }
 
 .post {
-  height: 400px;
+  height: 80vh;
+  width: 100vw;
   background: no-repeat center center;
   background-size: cover;
   position: relative;
+  padding: 20px 40px;
   &:hover {
     cursor: pointer;
   }
-  .overlay:hover {
-    transition: opacity .5s;
-    opacity: .8;
-  }
-  .overlay h4 {
-    color: #ddd;
+  h4 {
+    color: #fff;
     font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 26px;
-    font-weight: 200;
-    letter-spacing: 6px;
-    text-transform: uppercase;
-    text-align: center;
+    font-size: 64px;
+    letter-spacing: 4px;
     margin: 10px;
-  }
-  .overlay p {
-    margin: 5px;
-    color: #bbb;
-    font-size: 15px;
-    letter-spacing: 2px;
-    font-weight: 200;
-    text-align: center;
-  }
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: .9;
-  flex-direction: column;
-  transition: opacity .5s;
-}
-
-.overlay-dark {
-  background: #111;
-}
-
-.overlay-light {
-  background: #eee;
-}
-
-.posts {
-  article:nth-child(1) {
-    @media ( min-width: 1800px ) {
-      grid-row: 1 / 3;
-      grid-column: 1 / 3;
-      min-height: 600px;
-      color: #bbb;
-      h4 {
-        font-size: 41px;
-        letter-spacing: 4px;
-      }
-      p {
-        font-size: 21px;
-      }
-    }
+    text-decoration: underline;
   }
 }
 
@@ -468,14 +383,6 @@ figcaption {
   letter-spacing: 2px;
   font-style: italic;
   padding-left: 20px;
-}
-
-.read {
-  i{
-    font-size: 15px;
-  }
-  font-size: 15px;
-  color: #222;
 }
 
 .footer {

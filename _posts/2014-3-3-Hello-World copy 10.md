@@ -1,9 +1,8 @@
 ---
 layout: work
-category: work
 title: The Silks Within The Catachomb
 excerpt: A moment frozen in time.
-img: bm/catachomb-sky.jpg
+img: america/alithrow.jpeg
 img2: bm/amy.jpg
 ---
 
@@ -21,5 +20,3 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dicta vitae nul
 ![Burning Man]({{ "/images/bm/amy.jpg" | absolute_url }})
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolor aliquam exercitationem sint fugit, architecto! Soluta repellendus animi eligendi vero, necessitatibus asperiores maiores recusandae mollitia, dolorum ullam perferendis blanditiis excepturi.
-
-{% include products/aya.html %}

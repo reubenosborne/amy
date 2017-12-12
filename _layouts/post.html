@@ -10,16 +10,7 @@ layout: default
 	<hr>
 	
 	<p class="date">
-		Written on {{ page.date | date: "%B %e, %Y" }} &nbsp;&nbsp;
-		<span class="read">
-			{% capture words %}
-			{{ page.content | number_of_words | minus: 250 }}
-			{% endcapture %}
-			{% unless words contains "-" %}
-			<i class="icon-stopwatch"></i>
-			{{ words | plus: 250 | divided_by: 180 | append: "m read" }}
-			{% endunless %}
-		</span>
+		Posted on {{ page.date | date: "%B %e, %Y" }}
 	</p>
 
 	{{ content }}
@@ -30,6 +21,6 @@ layout: default
 
 <div class="footer" style="background-image: url('../images/{{ page.img }}')">
 	<div class="overlay overlay-dark flex">
-		<a href="/blog" class="back button flex">Back to Blog</a>
+		<a href="/" class="back button flex">Back to Works</a>
 	</div>
 </div>
