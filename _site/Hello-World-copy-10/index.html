@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>The Silks Within The Catachomb – Reuben Osborne – Web Developer</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="A moment frozen in time." />
+    <meta property="og:description" content="A moment frozen in time." />
+    
+    <meta name="author" content="Reuben Osborne" />
+
+    
+    <meta property="og:title" content="The Silks Within The Catachomb" />
+    <meta property="twitter:title" content="The Silks Within The Catachomb" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Reuben Osborne - Web Developer" href="/feed.xml" />
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Arimo,Playfair+Display');
+    </style>
+
+</head>
+
+<body>
+
+  <div id="main">
+
+    <div class="logo flex">
+      <a href="/">RO.</a>
+    </div>
+
+    <nav class="navigation">
+      <a href="/work">Portfolio</a>
+      <a href="/blog">Stories</a>
+      <a href="mailto:reuben.osborne@gmail.com">Contact</a>
+    </nav>
+
+    <div class="symbol flex">
+	<a href="/blog"><i class="icon-left-open"></i></a>
+</div>
+
+
+<article class="entry">
+	<h1>The Silks Within The Catachomb</h1>
+	
+	<h5>A moment frozen in time.</h5>
+
+	<hr>
+	
+	<p class="date">
+		Written on March  3, 2014
+	</p>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ea nobis inventore nesciunt rerum, repudiandae delectus magnam labore, doloribus a quam tempore optio eaque officia, repellat suscipit aliquid, quo magni.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quis corrupti rerum delectus consequatur ab earum beatae officiis ratione maiores, non impedit illo commodi debitis optio eaque dicta quae atque?</p>
+
+<p class="imgWide"><img src="http://localhost:4000/images/bm/catachomb-silks.jpg" alt="Burning Man" /></p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quidem inventore ut esse eum explicabo odio et veritatis obcaecati, dolore blanditiis, minima saepe magni dolores fugit praesentium distinctio eius tenetur.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dicta vitae nulla sint inventore vero quasi corporis quidem, aspernatur mollitia sequi magni reprehenderit perspiciatis facere blanditiis maxime. Iure, ea, molestias!</p>
+
+<p><img src="http://localhost:4000/images/bm/amy.jpg" alt="Burning Man" /></p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolor aliquam exercitationem sint fugit, architecto! Soluta repellendus animi eligendi vero, necessitatibus asperiores maiores recusandae mollitia, dolorum ullam perferendis blanditiis excepturi.</p>
+
+<div id="product-component-0d65472a09a"></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'molecular-jewelry.myshopify.com',
+      apiKey: '672a98b97f166bdd76bc5846ff85fdb5',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [9738891140],
+        node: document.getElementById('product-component-0d65472a09a'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": false,
+      "title": false,
+      "variantTitle": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "BUY NOW"
+    },
+    "styles": {
+      "product": {
+        "text-align": "left",
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#9cafd4",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        "padding-left": "30px",
+        "padding-right": "30px",
+        ":hover": {
+          "background-color": "#8c9ebf"
+        },
+        "border-radius": "0px",
+        ":focus": {
+          "background-color": "#8c9ebf"
+        }
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      },
+      "compareAt": {
+        "font-size": "12px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#9cafd4",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        ":hover": {
+          "background-color": "#8c9ebf"
+        },
+        "border-radius": "0px",
+        ":focus": {
+          "background-color": "#8c9ebf"
+        }
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#9cafd4",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        "padding-left": "30px",
+        "padding-right": "30px",
+        ":hover": {
+          "background-color": "#8c9ebf"
+        },
+        "border-radius": "0px",
+        ":focus": {
+          "background-color": "#8c9ebf"
+        }
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#9cafd4",
+        ":hover": {
+          "background-color": "#8c9ebf"
+        },
+        ":focus": {
+          "background-color": "#8c9ebf"
+        }
+      },
+      "count": {
+        "font-size": "14px"
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+
+</article>
+
+<div class="footer" style="background-image: url('../images/bm/amy.jpg')">
+	<div class="overlay overlay-dark flex">
+		<a href="/work" class="back button flex">Back to Portfolio</a>
+	</div>
+</div>
+
+  </div>
+
+</body>
+
+</html>
